@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
       message: "%{value} is not a valid category" }
       CLICKBAITY = [
          /Won't Believe/i,
-         /Secret/i, 
+         /Secret/i,
          /Top [0-9]*/i,
          /Guess/i
          ]
