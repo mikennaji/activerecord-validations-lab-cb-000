@@ -6,10 +6,10 @@ class Post < ActiveRecord::Base
       message: "%{value} is not a valid category" }
   validate :clickbaity?    
       CLICKBAITY = [
-         /Won't Believe/i,
-         /Secret/i,
-         /Top [0-9]*/i,
-         /Guess/i
+         /Won't Believe/,
+         /Secret/,
+         /Top [0-9]*/,
+         /Guess/
          ]
 
        def clickbaity?
